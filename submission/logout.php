@@ -1,0 +1,9 @@
+<?php
+ob_start();
+session_start();
+include('include/config.php');
+session_destroy();
+session_unset();
+header("location:index.php");
+exit();
+?>
